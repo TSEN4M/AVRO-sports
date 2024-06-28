@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5174/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">
+import RefreshRuntime from "/@react-refresh"
+RefreshRuntime.injectIntoGlobalHook(window)
+window.$RefreshReg$ = () => {}
+window.$RefreshSig$ = () => (type) => type
+window.__vite_plugin_react_preamble_installed__ = true
+</script>
+
+    <script type="module" src="./The Playground_files/client"></script>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./The Playground_files/index.css">
+    <title>The Playground</title>
+  <style type="text/css" data-vite-dev-id="D:/React-Projects/The-PlayGround/src/components/styles/Card.css">.sports-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 1200px;
+  margin: 0px;
+  padding: 0px auto;
+}
+.card-container{
+  display: block;
+  height: 400px;
+  width:332px;
+}
+.card {
+  position: relative;
+  border-radius: 13px;
+  border: none;
+  margin: 10px;
+  height: 400px;
+  width: 332px;
+  display: inline-block;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+.card .card-image {
+  width: 100%;
+  height: 291px; /* Make sure the image scales naturally */
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: inherit;
+  transition: transform 0.3s ease;
+}
+
+.card .title-text{
+  width: 332px;
+  height: 20px;
+}
+ .title-text span {
+  font-family: "Assistant-SemiBold", Helvetica;
+    font-size: 20px;
+    font-weight: 500;
+  color:white;
+}
+ .card-title object {
+  margin-left: 10px;
+  width: 20px; 
+  height: 20px;
+  font-weight: 100;
+}
+</style><style type="text/css" data-vite-dev-id="D:/React-Projects/The-PlayGround/src/components/styles/BookYour.css">.sports-container{
+    display: flex;
+    
+    justify-content: center;
+    background-color: #000000;
+}</style><style type="text/css" data-vite-dev-id="D:/React-Projects/The-PlayGround/src/components/styles/BookYourNav.css">.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000000;
+    color: white;
+    height:100px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+
+  }
+  
+  .logo img {
+    width: 150px;
+  }
+  
+  .search-bar {
+    width: 60%;
+    height: 50px;
+    background-color: #27303c66;
+    border-radius: 40px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .search-bar input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .location {
+    display: flex;
+    align-items: center;
+  }
+  
+  .location span {
+    font-family: "Assistant-SemiBold", Helvetica;
+    font-size: 20px;
+    font-weight: 500;
+    left: 0;
+    letter-spacing: 0.36px;
+    line-height: normal;
+    text-align: center;
+  }
+  
+  .location object {
+
+    margin-left: 10px;
+    width: 20px; 
+    height: 20px;
+    font-weight: 100;
+  }
+  
+  .sign-in-nav {
+    width:160px;
+    background-color: #ccff00;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 0px;
+    
+
+  }
+  .sign-in-nav span{
+    font-family: "Assistant-SemiBold", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    
+  }</style><style type="text/css" data-vite-dev-id="D:/React-Projects/The-PlayGround/src/components/styles/SportsFilter.css">.container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-left: 0;
+    padding: 20px;
+    background-color:#27313D;
+    color: white;
+  }
+  
+ h1   .container {
+    text-align: left;
+    margin-bottom: 10px;
+    font-family: "Arial";
+    font-weight: 400;
+    font-size: 25px;
+  }
+  
+  .filter-section {
+    margin-bottom: 20px;
+  }
+  
+  h2  .filter-section {
+    margin-bottom: 14px;
+    font-family: "Arial";
+    font-weight: 600;
+    font-size: 20px;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .checkbox-group label {
+    display: block;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  
+  .checkbox-group label input[type="checkbox"] {
+    margin-right: 5px;
+    
+  }</style><style type="text/css" data-vite-dev-id="D:/React-Projects/The-PlayGround/src/components/styles/BookTrial.css">.trialcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #479F78;
+    margin-left:15%;
+    margin-right: 15%;
+    margin-top: 10px;
+  }
+  
+  .head {
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .text{
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+  } 
+  .form button {
+    padding: 10px;
+    margin-left: 20px;
+    background-color: white;
+    color: #479F78;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .first{
+    flex-direction: column;
+    padding: 10px;
+  }
+  .last{
+    flex-direction: column;
+    padding: 10px;
+  }</style><style type="text/css" data-vite-dev-id="D:/React-Projects/The-PlayGround/src/components/styles/Checkout.css">.checkout-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70vh;
+  background-color: #111;
+  color: #fff;
+  margin-top: 25px;
+}
+
+.checkout-content,
+.order-summary {
+  padding: 10px;
+  background-color: #111;
+  /* border-radius: px; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+.order-summary{
+  margin-right: 70px;
+}
+.checkout-content{
+  margin-left: 100px;
+}
+h1, h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 10px;
+  /* display: inline-block; */
+}
+
+.sign-up,
+.payment,
+.order-item,
+.order-details,
+.coupon-code,
+.total {
+  margin-bottom: 20px;
+}
+
+.sign-up-button,
+.log-in-button,
+.apply-button,
+.proceed-button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 0px;
+  background-color: #fff;
+  color: #111;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sign-up-button:hover,
+.log-in-button:hover,
+.apply-button:hover,
+.proceed-button:hover {
+  background-color: #eee;
+}
+
+.coupon-code input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 70%;
+  margin-bottom: 10px;
+}</style><style type="text/css" data-vite-dev-id="D:/React-Projects/The-PlayGround/src/components/styles/Contact.css">.contactcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+    font-family: sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  
+  .header img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  .header p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 50px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .contact-form h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+  }
+  
+  .contact-form button {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #ddd;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  .social {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social a {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social a:hover {
+    color: #ddd;
+  }
+  
+  .social i {
+    margin-right: 10px;
+  }
+  
+  .sign-in {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sign-in button {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sign-in button:hover {
+    background-color: #ddd;
+  }</style><style type="text/css" data-vite-dev-id="D:/React-Projects/The-PlayGround/src/components/styles/LocationPopup.css">.location-popup {
+  background-color: #479f78;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.location-popup .div {
+  background-color: #479f78;
+  height: 66.72vh; /* 745px in relation to 1117px height */
+  overflow: hidden;
+  position: relative;
+  width: 94.79vw; /* 1638px in relation to 1728px width */
+}
+
+.location-popup .overlap {
+  background-color: #00000033;
+  border: 1px solid #f2fafa99;
+  border-radius: 2.4vh; /* 40px in relation to 1117px height */
+  height: 6.09vh; /* 68px in relation to 1117px height */
+  left: 1.79vw; /* 31px in relation to 1728px width */
+  position: absolute;
+  top: 3.67vh; /* 41px in relation to 1117px height */
+  width: 91.08vw; /* 1574px in relation to 1728px width */
+}
+
+.location-popup .text-wrapper {
+  color: #ffffff;
+  font-family: "Assistant-Regular", Helvetica;
+  font-size: 1.88vh; /* 21px in relation to 1117px height */
+  font-weight: 400;
+  left: 7.75vw; /* 134px in relation to 1728px width */
+  letter-spacing: 0.0375vh; /* 0.42px in relation to 1117px height */
+  line-height: normal;
+  position: absolute;
+  top: 1.61vh; /* 18px in relation to 1117px height */
+  width: 59.38vw; /* 1026px in relation to 1728px width */
+}
+
+.location-popup .magnifier {
+  height: 3.58vh; /* 40px in relation to 1117px height */
+  left: 1.68vw; /* 29px in relation to 1728px width */
+  position: absolute;
+  top: 1.25vh; /* 14px in relation to 1117px height */
+  width: 3.94vw; /* 68px in relation to 1728px width */
+}
+
+.location-popup .image {
+  height: 17.64vh; /* 197px in relation to 1117px height */
+  left: -750vw; /* 12960px in relation to 1728px width */
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 97.56vh; /* 1090px in relation to 1117px height */
+  width: 50.12vw; /* 866px in relation to 1728px width */
+}
+
+.location-popup .img {
+  height: 3.58vh; /* 40px in relation to 1117px height */
+  left: -495vw; /* 8555px in relation to 1728px width */
+  position: absolute;
+  top: 144.68vh; /* 1616px in relation to 1117px height */
+  width: 3.58vh; /* 40px in relation to 1117px height */
+}
+
+.location-popup .overlap-group {
+  height: 12.62vh; /* 141px in relation to 1117px height */
+  left: 87.04vw; /* 1504px in relation to 1728px width */
+  position: absolute;
+  top: 80.91vh; /* 904px in relation to 1117px height */
+  width: 7.75vw; /* 134px in relation to 1728px width */
+}
+
+.location-popup .ellipse {
+  background-color: #ccff00;
+  border-radius: 12.02vw; /* 134px in relation to 1117px height */
+  height: 12.02vw; /* 134px in relation to 1117px height */
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 7.75vw; /* 134px in relation to 1728px width */
+}
+
+.location-popup .text-wrapper-2 {
+  color: #000000;
+  font-family: "Assistant-Bold", Helvetica;
+  font-size: 8.95vh; /* 100px in relation to 1117px height */
+  font-weight: 700;
+  left: 1.91vw; /* 33px in relation to 1728px width */
+  letter-spacing: 0.18vh; /* 2px in relation to 1117px height */
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 3.94vw; /* 68px in relation to 1728px width */
+}
+
+.location-popup .text-wrapper-3 {
+  color: #ffffff;
+  font-family: "Assistant-Bold", Helvetica;
+  font-size: 1.79vh; /* 20px in relation to 1117px height */
+  font-weight: 700;
+  left: 82.13vw; /* 1419px in relation to 1728px width */
+  letter-spacing: 0.036vh; /* 0.4px in relation to 1117px height */
+  line-height: normal;
+  position: absolute;
+  top: 66.62vh; /* 744px in relation to 1117px height */
+  width: 11.81vw; /* 204px in relation to 1728px width */
+}
+
+.location-popup .heart {
+  height: 0.09vh; /* 1px in relation to 1117px height */
+  left: 79.97vw; /* 1382px in relation to 1728px width */
+  position: absolute;
+  top: 66.7vh; /* 745px in relation to 1117px height */
+  width: 1.62vw; /* 28px in relation to 1728px width */
+}
+
+.location-popup .text-wrapper-4 {
+  color: #ffffff;
+  font-family: "Assistant-SemiBold", Helvetica;
+  font-size: 2.68vh; /* 30px in relation to 1117px height */
+  font-weight: 600;
+  left: 7.47vw; /* 129px in relation to 1728px width */
+  letter-spacing: 0.054vh; /* 0.6px in relation to 1117px height */
+  line-height: normal;
+  position: absolute;
+  top: 12.62vh; /* 141px in relation to 1117px height */
+  width: 20.77vw; /* 359px in relation to 1728px width */
+}
+
+.location-popup .text-wrapper-5 {
+  color: #ffffff;
+  font-family: "Assistant-ExtraBold", Helvetica;
+  font-size: 2.68vh; /* 30px in relation to 1117px height */
+  font-weight: 800;
+  left: 36.93vw; /* 638px in relation to 1728px width */
+  letter-spacing: 0.054vh; /* 0.6px in relation to 1117px height */
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 26.5vh; /* 296px in relation to 1117px height */
+  width: 20.77vw; /* 359px in relation to 1728px width */
+}
+
+.location-popup .text-wrapper-6 {
+  color: #ffffff;
+  font-family: "Assistant-ExtraBold", Helvetica;
+  font-size: 2.68vh; /* 30px in relation to 1117px height */
+  font-weight: 800;
+  left: 36.93vw; /* 638px in relation to 1728px width */
+  letter-spacing: 0.054vh; /* 0.6px in relation to 1117px height */
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 56.74vh; /* 634px in relation to 1117px height */
+  width: 20.77vw; /* 359px in relation to 1728px width */
+}
+
+.location-popup .overlap-2 {
+  border: 1px solid #ffffff;
+  border-radius: 1.88vh; /* 21px in relation to 1117px height */
+  height: 3.76vh; /* 42px in relation to 1117px height */
+  left: 4.28vw; /* 74px in relation to 1728px width */
+  position: absolute;
+  top: 12.71vh; /* 142px in relation to 1117px height */
+  width: 3.76vh; /* 42px in relation to 1117px height */
+}
+
+.location-popup .ellipse-2 {
+  border: 1px solid #ffffff;
+  border-radius: 1.43vh; /* 16px in relation to 1117px height */
+  height: 2.86vh; /* 32px in relation to 1117px height */
+  left: 0.23vw; /* 4px in relation to 1728px width */
+  position: absolute;
+  top: 0.36vh; /* 4px in relation to 1117px height */
+  width: 2.86vh; /* 32px in relation to 1117px height */
+}
+
+.location-popup .ellipse-3 {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 0.76vh; /* 8.5px in relation to 1117px height */
+  height: 1.52vh; /* 17px in relation to 1117px height */
+  left: 0.64vw; /* 11px in relation to 1728px width */
+  position: absolute;
+  top: 0.98vh; /* 11px in relation to 1117px height */
+  width: 1.52vh; /* 17px in relation to 1117px height */
+}
+
+.location-popup .div-wrapper {
+  border: 2px solid #ffffff;
+  height: 5.82vh; /* 65px in relation to 1117px height */
+  left: 10.77vw; /* 186px in relation to 1728px width */
+  position: absolute;
+  top: 35.27vh; /* 394px in relation to 1117px height */
+  width: 16.14vw; /* 279px in relation to 1728px width */
+}
+
+.location-popup .text-wrapper-7 {
+  color: #ffffff;
+  font-family: "Assistant-SemiBold", Helvetica;
+  font-size: 2.68vh; /* 30px in relation to 1117px height */
+  font-weight: 600;
+  left: 2.55vw; /* 44px in relation to 1728px width */
+  letter-spacing: 0.054vh; /* 0.6px in relation to 1117px height */
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 0.81vh; /* 9px in relation to 1117px height */
+  width: 10.82vw; /* 187px in relation to 1728px width */
+}
+
+.location-popup .overlap-3 {
+  border: 2px solid #ffffff;
+  height: 5.82vh; /* 65px in relation to 1117px height */
+  left: 30.03vw; /* 519px in relation to 1728px width */
+  position: absolute;
+  top: 35.27vh; /* 394px in relation to 1117px height */
+  width: 16.14vw; /* 279px in relation to 1728px width */
+}
+
+.location-popup .overlap-group-2 {
+  border: 2px solid #ffffff;
+  height: 5.82vh; /* 65px in relation to 1117px height */
+  left: 49.31vw; /* 852px in relation to 1728px width */
+  position: absolute;
+  top: 35.27vh; /* 394px in relation to 1117px height */
+  width: 16.14vw; /* 279px in relation to 1728px width */
+}
+
+.location-popup .overlap-4 {
+  border: 2px solid #ffffff;
+  height: 5.82vh; /* 65px in relation to 1117px height */
+  left: 68.58vw; /* 1185px in relation to 1728px width */
+  position: absolute;
+  top: 35.27vh; /* 394px in relation to 1117px height */
+  width: 16.14vw; /* 279px in relation to 1728px width */
+}
+
+.location-popup .overlap-5 {
+  border: 2px solid #ffffff;
+  height: 5.82vh; /* 65px in relation to 1117px height */
+  left: 20.37vw; /* 352px in relation to 1728px width */
+  position: absolute;
+  top: 44.85vh; /* 501px in relation to 1117px height */
+  width: 16.14vw; /* 279px in relation to 1728px width */
+}
+
+.location-popup .overlap-6 {
+  border: 2px solid #ffffff;
+  height: 5.82vh; /* 65px in relation to 1117px height */
+  left: 39.65vw; /* 685px in relation to 1728px width */
+  position: absolute;
+  top: 44.85vh; /* 501px in relation to 1117px height */
+  width: 16.14vw; /* 279px in relation to 1728px width */
+}
+
+.location-popup .overlap-7 {
+  border: 2px solid #ffffff;
+  height: 5.82vh; /* 65px in relation to 1117px height */
+  left: 58.92vw; /* 1018px in relation to 1728px width */
+  position: absolute;
+  top: 44.85vh; /* 501px in relation to 1117px height */
+  width: 16.14vw; /* 279px in relation to 1728px width */
+}
+</style><style type="text/css" data-vite-dev-id="D:/React-Projects/The-PlayGround/src/index.css">@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+/*
+! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com
+*/
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: #e5e7eb; /* 2 */
+}
+::before,
+::after {
+  --tw-content: '';
+}
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+html,
+:host {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4; /* 3 */
+  font-family: Assistant, sans-serif; /* 4 */
+  font-feature-settings: normal; /* 5 */
+  font-variation-settings: normal; /* 6 */
+  -webkit-tap-highlight-color: transparent; /* 7 */
+}
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+body {
+  margin: 0; /* 1 */
+  line-height: inherit; /* 2 */
+}
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+  border-top-width: 1px; /* 3 */
+}
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+/*
+Remove the default font size and weight for headings.
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+/*
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: Menlo, Monaco, monospace; /* 1 */
+  font-feature-settings: normal; /* 2 */
+  font-variation-settings: normal; /* 3 */
+  font-size: 1em; /* 4 */
+}
+/*
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+  border-collapse: collapse; /* 3 */
+}
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-feature-settings: inherit; /* 1 */
+  font-variation-settings: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  font-weight: inherit; /* 1 */
+  line-height: inherit; /* 1 */
+  letter-spacing: inherit; /* 1 */
+  color: inherit; /* 1 */
+  margin: 0; /* 2 */
+  padding: 0; /* 3 */
+}
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+button,
+select {
+  text-transform: none;
+}
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+button,
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
+  -webkit-appearance: button; /* 1 */
+  background-color: transparent; /* 2 */
+  background-image: none; /* 2 */
+}
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+:-moz-focusring {
+  outline: auto;
+}
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+legend {
+  padding: 0;
+}
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/*
+Reset default styling for dialogs.
+*/
+dialog {
+  padding: 0;
+}
+/*
+Prevent resizing textareas horizontally by default.
+*/
+textarea {
+  resize: vertical;
+}
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+input::placeholder,
+textarea::placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+/*
+Set the default cursor for buttons.
+*/
+button,
+[role="button"] {
+  cursor: pointer;
+}
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+:disabled {
+  cursor: default;
+}
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+/* Make elements with the HTML hidden attribute stay hidden by default */
+[hidden] {
+  display: none;
+}
+*, ::before, ::after{
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+::backdrop{
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+.container{
+  width: 100%;
+}
+@media (min-width: 640px){
+  .container{
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px){
+  .container{
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px){
+  .container{
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px){
+  .container{
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px){
+  .container{
+    max-width: 1536px;
+  }
+}
+.absolute{
+  position: absolute;
+}
+.left-0{
+  left: 0px;
+}
+.top-1\/2{
+  top: 50%;
+}
+.top-\[-100\%\]{
+  top: -100%;
+}
+.left-1\/2{
+  left: 50%;
+}
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+.mb-0{
+  margin-bottom: 0px;
+}
+.mt-24{
+  margin-top: 6rem;
+}
+.flex{
+  display: flex;
+}
+.h-1\/2{
+  height: 50%;
+}
+.h-80{
+  height: 20rem;
+}
+.min-h-\[60vh\]{
+  min-height: 60vh;
+}
+.w-20{
+  width: 5rem;
+}
+.w-\[92\%\]{
+  width: 92%;
+}
+.w-full{
+  width: 100%;
+}
+.-translate-x-1\/2{
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.-translate-y-1\/2{
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.transform{
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.flex-col{
+  flex-direction: column;
+}
+.items-center{
+  align-items: center;
+}
+.justify-center{
+  justify-content: center;
+}
+.justify-between{
+  justify-content: space-between;
+}
+.gap-8{
+  gap: 2rem;
+}
+.bg-\[\#ccff00\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(204 255 0 / var(--tw-bg-opacity));
+}
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+.bg-gray-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+.bg-cover{
+  background-size: cover;
+}
+.bg-center{
+  background-position: center;
+}
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.text-center{
+  text-align: center;
+}
+.font-poppins{
+  font-family: Poppins, sans-serif;
+}
+.font-sans{
+  font-family: Assistant, sans-serif;
+}
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.font-bold{
+  font-weight: 700;
+}
+.leading-none{
+  line-height: 1;
+}
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.filter{
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.duration-500{
+  transition-duration: 500ms;
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+}
+.hover\:text-gray-300:hover{
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+@media (min-width: 768px){
+  .md\:static{
+    position: static;
+  }
+  .md\:hidden{
+    display: none;
+  }
+  .md\:min-h-fit{
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+  .md\:w-auto{
+    width: auto;
+  }
+  .md\:flex-row{
+    flex-direction: row;
+  }
+  .md\:items-center{
+    align-items: center;
+  }
+  .md\:gap-\[4vw\]{
+    gap: 4vw;
+  }
+}
+@media (min-width: 1024px){
+  .lg\:h-screen{
+    height: 100vh;
+  }
+}
+
+
+
+</style></head>
+  <body>
+    <div id="root"><div><header class="bg-black"><nav class="flex justify-between items-center w-[92%] mx-auto"><a href="http://localhost:5174/"><img class="w-20 cursor-pointer" src="./The Playground_files/logo_white.png" alt="logo"></a><div class="nav-links duration-500 md:static absolute text-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5"><ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 font-sans font-bold "><li><a class="hover:text-gray-300" href="http://localhost:5174/">HOME</a></li><li><a href="http://localhost:5174/#" class="hover:text-gray-300">ABOUT US</a></li><li><a href="http://localhost:5174/#" class="hover:text-gray-300">CONTACT US</a></li><li><button class="bg-[#ccff00] text-black font-Assistant px-5 py-2"><a href="http://localhost:5174/booking">BOOK MY SPORT</a></button></li><li><button class="bg-[#ccff00] text-black font-Assistant px-5 py-2"><a href="http://localhost:5174/community">COMMUNITY</a></button></li></ul><ion-icon name="menu" classname="text-3xl cursor-pointer md:hidden"></ion-icon></div></nav></header><div class="w-full h-1/2 bg-gray-300"></div><section class="w-full h-80 lg:h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url(&quot;/src/assets/section-1.png&quot;);"><div class="flex flex-col justify-center items-center pt-40px"><div></div><p class="text-2xl font-assistant text-white text-center leading-none mb-0">Where every game begins<br> welcome to</p><h2 class="text-4xl font-poppins text-white font-bold leading-none">AVRO SPORTS</h2></div></section></div></div>
+    <script type="module" src="./The Playground_files/main.jsx"></script>
+  
+
+</body></html>

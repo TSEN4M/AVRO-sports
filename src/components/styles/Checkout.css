@@ -1,0 +1,70 @@
+.checkout-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70vh;
+  background-color: #111;
+  color: #fff;
+  margin-top: 25px;
+}
+
+.checkout-content,
+.order-summary {
+  padding: 10px;
+  background-color: #111;
+  /* border-radius: px; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+.order-summary{
+  margin-right: 70px;
+}
+.checkout-content{
+  margin-left: 100px;
+}
+h1, h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 10px;
+  /* display: inline-block; */
+}
+
+.sign-up,
+.payment,
+.order-item,
+.order-details,
+.coupon-code,
+.total {
+  margin-bottom: 20px;
+}
+
+.sign-up-button,
+.log-in-button,
+.apply-button,
+.proceed-button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 0px;
+  background-color: #fff;
+  color: #111;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sign-up-button:hover,
+.log-in-button:hover,
+.apply-button:hover,
+.proceed-button:hover {
+  background-color: #eee;
+}
+
+.coupon-code input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 70%;
+  margin-bottom: 10px;
+}

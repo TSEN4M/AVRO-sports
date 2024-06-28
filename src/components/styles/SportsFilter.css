@@ -1,0 +1,44 @@
+.filter-container {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-left: 0;
+    padding: 20px;
+    background-color:#27313D;
+    color: white;
+  }
+  
+ h1   .container {
+    text-align: left;
+    margin-bottom: 10px;
+    font-family: "Arial";
+    font-weight: 400;
+    font-size: 25px;
+  }
+  
+  .filter-section {
+    margin-bottom: 20px;
+  }
+  
+  h2  .filter-section {
+    margin-bottom: 14px;
+    font-family: "Arial";
+    font-weight: 600;
+    font-size: 20px;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .checkbox-group label {
+    display: block;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  
+  .checkbox-group label input[type="checkbox"] {
+    margin-right: 5px;
+    
+  }
